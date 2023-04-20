@@ -1,0 +1,418 @@
+/*
+    Theme Name: CASCSA
+    Author: itsweiwei
+    Description: Theme for CASCSA website
+    Version: 1.0
+*/
+
+/*Main Site Universal Stuff*/
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.2) url("images/test.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main {
+    margin: auto;
+    background: rgba(255, 255, 255, 1.0);
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/*Header*/
+
+nav {
+    height: 72px;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    font-size: 1.5vw;
+    display: flex;
+    background: rgba(0, 0, 0, 0.75);
+    justify-content: space-between;
+    padding: 0 16px 0 0;
+    box-sizing: border-box;
+    z-index: 100;
+}
+  
+nav a {
+    height: 100%;
+    padding: 0 32px;
+    color: #eee;
+    transition: 0.4s;
+}
+  
+nav a:hover {
+    text-decoration: none;
+    color: rgb(255, 221, 0);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+nav ul > li {
+    padding: 10px;
+}
+
+.logo-name {
+    padding: 24px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content > * {
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-content > p > a {
+    color: black;
+    font-size: 16px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content > p:hover {
+    background-color: #eee;
+}
+
+/*Homepage*/
+
+#banner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
+#logo-img a {
+    display: flex;
+    height: 90%;
+    padding: auto;
+    color: white;
+    transition: 0.4s;
+}
+
+.section {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+    padding-bottom: 20px;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.left-section {
+    display: flex;
+}
+
+.left-section-img {
+    height: 40vh;
+    padding: 10px;
+    margin: auto;
+}
+
+.left-section-text {
+    font-size: 18pt;
+    width: 90vh;
+    padding: 20px;
+    margin: auto;
+}
+
+.right-section {
+    display: flex;
+}
+
+.right-section-img {
+    height: 40vh;
+    padding: 10px;
+    margin: auto;
+}
+
+.right-section-text {
+    font-size: 18pt;
+    width: 90vh;
+    padding: 20px;
+    margin: auto;
+}
+  
+.section-heading {
+    text-decoration: underline;
+    color: black;
+    font-size: 32px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: all 0.4s;
+    display: inline-block;
+}
+
+.section-heading:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Footer*/
+
+footer {
+    background: black;
+    opacity: 0.75;
+    padding: 8px;
+    color: white;
+    display: flex;
+    border: 1px solid black;
+}   
+  
+footer #left-footer {
+    flex: 1;
+    padding-left: 50px;
+}
+
+footer #left-footer h3 {
+    padding-left: 50px;
+}
+  
+footer #left-footer ul {
+    padding-left: 50px;
+    list-style: none;
+    line-height: 1.5;
+    color: white;
+}
+
+footer #left-footer li a {
+    color: white;
+}
+
+footer #right-footer {
+    flex: 2;
+    padding: 8px;
+    text-align: center;
+}
+
+/*Posts for All Events/Programs*/
+  
+.post-body {
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.post-body h1 {
+    text-decoration: underline;
+}
+
+.post-header {
+    font-size: 32pt;
+}
+
+.post-img {
+    width: 100vh;
+}
+
+.post-text {
+    margin: auto;
+    width: 90vh;
+    padding: 50px;
+}
+
+.program-content {
+    text-align: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.two-column {
+    width: 50%;
+    float: right;
+}
+
+.two-column > a {
+    color:rgba(0, 0, 0, 0.75);
+}
+
+h2 > ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.title-category {
+    display: inline;
+    list-style: none;
+}
+
+/*Individual Pages*/
+
+.main-content {
+    padding-top: 72px;
+    min-height: 100vh;
+    width: 100%;
+    display: inline-block;
+}
+
+.main-content > img {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.main-content > figure {
+    width: 80%;
+    margin: auto;
+}
+
+.main-content > h2 {
+    text-align: center;
+}
+
+.single-program-content {
+    margin: auto;
+    width: 100vh;
+}
+
+.single-program-content > * {
+    padding-bottom: 20px;
+}
+
+.program-content > a > img {
+    width: 80%;
+}
+
+.program-excerpt {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*Program Page*/
+
+.program-sidebar {
+    background-color: #c5dde3;
+}
+
+div.two-column {
+    transition: 0.15s;
+}
+
+div.two-column:hover {
+    transform: scale(1.1);
+}
+
+/*About Page*/
+
+.about-page {
+    display: flex;
+}
+
+.about-content {
+    width: 100vh;
+    margin: auto;
+}
+
+.about-content > p {
+    padding-bottom: 10px;
+}
+
+.about-left-col {
+    width: 15%;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 100px;
+}
+
+.about-left-col > h2 {
+    border-bottom: 1px solid black;
+    margin-bottom: 0px;
+}
+
+.about-left-col > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-left-col > ul > li {
+    padding-bottom: 2px;
+}
+
+.about-left-col > ul > li > a {
+    color: black;
+    text-decoration: none;
+}
+
+.about-left-col > ul > li > a:hover {
+    color: #87add6;
+}
+
+.about-right-col {
+    padding-top: 20px;
+}
+
+/*Staff Page*/
+
+.staff-content {
+    text-align: center;
+    width: 100vh;
+    margin: auto;
+}
+
+div > p {
+    margin: auto;   
+}
+
+.maps-embed {
+    height: 450px;
+    padding-bottom: 20px;
+}
+
+.maps-embed > iframe {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+figcaption {
+    font-size: 22px;
+}

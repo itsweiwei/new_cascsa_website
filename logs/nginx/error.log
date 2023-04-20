@@ -1,0 +1,1 @@
+2022/08/17 17:53:29 [error] 12396#21736: *185 WSARecv() failed (10054: An existing connection was forcibly closed by the remote host) while reading response header from upstream, client: 127.0.0.1, server: , request: "GET / HTTP/1.0", upstream: "fastcgi://127.0.0.1:10002", host: "cascsa.local", referrer: "https://cascsa.local/"
