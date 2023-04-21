@@ -146,3 +146,6 @@ Stack trace:
 #3 {main}
   thrown in C:\Users\elsfa\Local Sites\cascsa\app\public\wp-content\themes\cascsa\archive-event.php on line 7
 [20-Apr-2023 20:26:06 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\elsfa\Local Sites\cascsa\app\public\wp-includes\class-wp-customize-widgets.php on line 905
+[21-Apr-2023 19:00:56 UTC] PHP Warning:  Undefined variable $args in C:\Users\elsfa\Local Sites\cascsa\app\public\wp-content\themes\cascsa\archive-event.php on line 6
+[21-Apr-2023 19:00:56 UTC] PHP Warning:  Undefined variable $args in C:\Users\elsfa\Local Sites\cascsa\app\public\wp-content\themes\cascsa\archive-event.php on line 6
+[21-Apr-2023 19:00:56 UTC] PHP Warning:  Undefined variable $args in C:\Users\elsfa\Local Sites\cascsa\app\public\wp-content\themes\cascsa\archive-event.php on line 6

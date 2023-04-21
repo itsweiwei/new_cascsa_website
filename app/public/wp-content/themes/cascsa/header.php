@@ -20,7 +20,9 @@
             </div>
             <ul>
                 <li><a href="<?php echo site_url(''); ?>">Home</a></li>
-                <li><a href="<?php echo site_url('/event'); ?>">Events</a></li>
+                <li>
+                    <a href="<?php echo site_url('/events'); ?>">Events</a>
+                </li>
                 <li><a href="<?php echo site_url('/program'); ?>">Programs</a></li>
                 <li><a href="<?php echo site_url('/media'); ?>">Media</a></li>
                 <li class="dropdown">

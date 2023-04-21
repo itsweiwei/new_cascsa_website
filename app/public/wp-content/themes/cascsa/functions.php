@@ -35,14 +35,14 @@
             )
         );
 
-        register_post_type('event',
+        register_post_type('upcoming-event',
             array(
-                'rewrite' => array('slug' => 'event'),
-                'taxonomies' => array('category', 'post-tag'),
+                'rewrite' => array('slug' => 'upcoming-event'),
+                'taxonomies' => array('category', 'post_tag'),
                 'labels' => array(
-                    'name' => 'Events',
-                    'add_new_item' => 'Add New Event',
-                    'edit_item' => 'Edit Event'
+                    'name' => 'Upcoming Events',
+                    'add_new_item' => 'Add New Upcoming Event',
+                    'edit_item' => 'Edit Upcoming Event'
                 ),
                 'menu-icon' => 'dashicons-calendar-alt',
                 'public' => true,
@@ -52,6 +52,24 @@
                 )
             )
         );
+
+        register_post_type('past-event',
+        array(
+            'rewrite' => array('slug' => 'past-event'),
+            'taxonomies' => array('category', 'post_tag'),
+            'labels' => array(
+                'name' => 'Past Events',
+                'add_new_item' => 'Add New Past Event',
+                'edit_item' => 'Edit Past Event'
+            ),
+            'menu-icon' => 'dashicons-calendar-alt',
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title', 'thumbnail', 'editor', 'excerpt'
+            )
+        )
+    );
     }
 
     add_action('init', 'custom_post_type');
