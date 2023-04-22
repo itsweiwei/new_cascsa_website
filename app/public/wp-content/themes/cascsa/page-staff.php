@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main class="about-page main-content">
-    <div class="about-left-col">
+    <div class="about-left-col program-sidebar">
             <h2>Learn More</h2>
             <ul>
                 <li><a href="<?php echo site_url('/about'); ?>">Our Organization</a></li>
